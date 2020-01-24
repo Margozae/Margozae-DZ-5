@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JavaScript</title>
+</head>
+<body>
+    <script>
+        function getResult (firstNumber = 5, secondNumber = 6, mathSign = "+") {
+        if (mathSign === "+") {
+            return firstNumber + secondNumber;
+        }
+        if (mathSign === "*") {
+            return firstNumber * secondNumber;
+        }
+        return "Измените знак!"
+    }
+    
+    var result = getResult(5, 6, "*")
+    console.log(result);
+    </script>
+</body>
+</html>
