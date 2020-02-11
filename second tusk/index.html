@@ -8,16 +8,27 @@
 </head>
 <body>
     <script>
-        function foo (a, b) {
-          let a = ['H', 'e', 'l', 'l', 'o'];
-          delet [o];
-          result a;
+       function  foo (a , b) {
+            var word = "";
+            var ww = '';
+            for (var i = 0; i < b.length; i++) {
+
+                for (var j = 0; j < a.length; j++) {
+
+                    if (a[j] === b[i]) {
+                        delete a[j];
+                    } else {
+                        word += a[j];
+                    }
+                }
+                
+            }
+            return  word;
+            
         }
-          
-        
-    
-    var result = fuu('Hello', ['o']);
-    console.log(result);
+
+        var result = foo("Hello", ["o", "l", "e"]);
+        console.log(result);
   </script>
   </body>
 </html>
