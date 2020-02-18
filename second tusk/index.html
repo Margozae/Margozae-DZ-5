@@ -9,25 +9,14 @@
 <body>
     <script>
        function  foo (a , b) {
-            var word = "";
-            var ww = '';
-            for (var i = 0; i < b.length; i++) {
-
-                for (var j = 0; j < a.length; j++) {
-
-                    if (a[j] === b[i]) {
-                        delete a[j];
-                    } else {
-                        word += a[j];
-                    }
-                }
-                
+            for (var i = 0; i < a.length; i++) {
+                for (var j = 0; j < b.length; j++) {
+                    a = a.replace(b[j], '');    
+                }   
             }
-            return  word;
-            
+            return  a; 
         }
-
-        var result = foo("Hello", ["o", "l", "e"]);
+        var result = foo("Hello", ["o", "l"]);
         console.log(result);
   </script>
   </body>
