@@ -1,7 +1,7 @@
 function foo(str, exclusion) {
-    for(let j = 0; j <= exclusion.length; j++) {
+    for(let j = 0; j < exclusion.length; j++) {
         let newStr = '';
-        for(let i = 0; i <= str.length - 1; i++) { // eslint-disable-line 
+        for(let i = 0; i < str.length; i++) {
             if (str[i] !== exclusion[j]) {
                 newStr += str[i];
             }
